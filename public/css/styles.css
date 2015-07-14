@@ -1,0 +1,166 @@
+@font-face {
+  font-family: 'Press Start';
+  src: url('../fonts/prstartk.ttf');
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+  text-align: center;
+  font-family: 'Press Start', sans-serif;
+}
+
+input {
+  font-family: 'Press Start', sans-serif;
+  padding: 5px;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#statistics {
+  width: 33%;
+}
+
+#middle {
+  width: 34%;
+  padding-top: 10px;
+}
+
+#right {
+  width: 33%;
+}
+
+#statistics,
+#middle,
+#right {
+  height: 100%;
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#lines {
+  text-align: center;
+}
+
+#lines h1 {
+  margin-top: 0;
+}
+
+#board {
+  margin: 0 auto;
+  border: 5px solid black;
+}
+
+#hideBoard {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: grey;
+}
+
+#hideBoard h2 {
+  top: 50%;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+
+#score {
+  /*float: left;*/
+}
+
+#next {
+  padding: 5px;
+}
+
+#nextPiece {
+  /*border: 1px solid black;*/
+  margin: 0 auto;
+}
+
+#scoreCard,
+#levelCard,
+#next {
+  border: 1px solid black;
+  margin: 10px auto;
+  padding: 10px;
+  width: 200px;
+}
+
+.box {
+  margin: 0;
+  float: left;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.boardPiece {
+  border: 1px outset grey;
+}
+
+.blue {
+  background: blue;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.purple {
+  background: purple;
+}
+
+.red {
+  background: red;
+}
+
+.orange {
+  background: orange;
+}
+
+.green {
+  background: green;
+}
+
+.brown {
+  background: brown;
+}
+
+.pink {
+  background: pink;
+}
+
+.gameOver {
+  background: grey;
+}
+
+#customize {
+  visibility: hidden;
+}
+
+#clickHere {
+  text-decoration: underline;
+  color: blue;
+}
+
+#boardMessage {
+  padding: 10px;
+}
+
+#modal {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
