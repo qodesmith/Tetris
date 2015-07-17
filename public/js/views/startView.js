@@ -20,6 +20,9 @@ App.Views.StartView = Backbone.View.extend({
   el: '#container',
   render: function() {
     this.$el.html(this.template);
+
+    // Set the flexbox layout to column (vertical).
+    $('#container').css('flex-direction','column');
   },
   boardSize: function() {
     var columns = parseInt($('#customColumns').val());

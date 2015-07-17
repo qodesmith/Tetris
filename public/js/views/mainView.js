@@ -23,6 +23,9 @@ App.Views.MainView = Backbone.View.extend({
   el: '#container',
   render: function() {
     this.$el.html(this.template);
+
+    // Set the flexbox layout to row (vertical).
+    $('#container').css('flex-direction','row');
   },
   renderBoard: function(columns, rows) {
     var boardWidth = columns * 30;

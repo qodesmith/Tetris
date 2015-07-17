@@ -19786,7 +19786,7 @@ Controls = {
     });
   },
   modal: function() {
-    $('<div id="modal">').appendTo('body');
+    $('#modal').show()
   },
   centerBox: function() {
     if(App.columns % 2 === 0) {
@@ -20117,6 +20117,9 @@ App.Views.MainView = Backbone.View.extend({
   el: '#container',
   render: function() {
     this.$el.html(this.template);
+
+    // Set the flexbox layout to row (vertical).
+    $('#container').css('flex-direction','row');
   },
   renderBoard: function(columns, rows) {
     var boardWidth = columns * 30;
@@ -20176,6 +20179,9 @@ App.Views.StartView = Backbone.View.extend({
   el: '#container',
   render: function() {
     this.$el.html(this.template);
+
+    // Set the flexbox layout to column (vertical).
+    $('#container').css('flex-direction','column');
   },
   boardSize: function() {
     var columns = parseInt($('#customColumns').val());

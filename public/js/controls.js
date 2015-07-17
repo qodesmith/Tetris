@@ -520,7 +520,7 @@ Controls = {
     });
   },
   modal: function() {
-    $('<div id="modal">').appendTo('body');
+    $('#modal').show()
   },
   centerBox: function() {
     if(App.columns % 2 === 0) {
